@@ -5,6 +5,8 @@ install:
 	sudo mkdir -p $(app_dir)
 	sudo cp -r ./*  $(app_dir)
 	sudo cp ./hello_world.conf /etc/init/hello_world.conf
+	cd $(app_dir)
+	npm install
 
 deploy:
 	sudo rm -rf $(temp_install_dir)
