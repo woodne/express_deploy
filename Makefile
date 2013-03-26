@@ -14,5 +14,4 @@ deploy:
 	make start_app
 
 start_app:
-	sudo stop hello_world
 	sudo start --no-wait -q hello_world
